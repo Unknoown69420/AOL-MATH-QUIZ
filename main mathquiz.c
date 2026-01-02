@@ -64,7 +64,7 @@ int main() {
                 if (answer == correctResult) {
                     int points = (mode == 1) ? 10 : (mode == 2 ? 20: 30);
                     currentScore += points;
-                    
+                    printf("Correct! +%d points. Current Total: %d\n", points, currentScore);
                     break; // Exit the question loop
                 } else {
                     printf("Incorrect. Try Again!\n");
