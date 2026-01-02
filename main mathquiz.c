@@ -127,19 +127,4 @@ rintf("\n--- LEADERBOARD ---\n");
     }
 }
 
-void searchPlayer(char searchName[]) {
-    struct Player p;
-    FILE *fp = fopen("leaderboard.txt", "r");
-    int found = 0;
 
-    if (fp == NULL) return;
-
-    while (fscanf(fp, "%s %d", p.name, &p.score) != EOF) {
-        if (strcmp(p.name, searchName) == 0) {
-            printf("Match found: %s has a score of %d\n", p.name, p.score);
-            found = 1;
-        }
-    }
-    if (!found) printf("Player not found\n");
-    fclose(fp);
-}
