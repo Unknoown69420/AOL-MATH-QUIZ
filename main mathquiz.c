@@ -80,12 +80,7 @@ int main() {
             scanf("%s", sName);
             searchPlayer(sName);
         }
-        else if (mainMenu == 4) {
-            saveScore(playerName, currentScore);
-            printf("Score saved. Goodbye %s!\n", playerName);
-            keepPlaying = 0;
-        }
-    }
+        
 
     return 0;
 }
