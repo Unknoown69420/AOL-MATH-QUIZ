@@ -42,7 +42,7 @@ int main() {
         printf("2. Medium (20 Points)\n");
         printf("3. Hard (30 Points)\n");
         printf("Choice:\n");
-            scanf("%d", &mode);
+        scanf("%d", &mode);
 
 
 		//Ranges setting based on difficulty
