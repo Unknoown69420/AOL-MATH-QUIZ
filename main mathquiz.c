@@ -53,8 +53,7 @@ int main() {
                 continue;
             }
 
-            numA = rand() % (rangeMax - rangeMin + 1) + rangeMin;
-            numB = rand() % (rangeMax - rangeMin + 1) + rangeMin;
+            
 
             if (difficulty == 1) {
                 correctAnswer = numA + numB;
