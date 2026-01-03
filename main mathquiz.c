@@ -35,7 +35,7 @@ int main() {
        
     // tingkat kesulitan nya
 	if (choice == 1) {
-            
+            printf("\nSelect Mode: \n");
             printf("1. Easy (10 Points)\n");
             printf("2. Medium (20 Points)\n");
             printf("3. Hard (30 Points)\n");
