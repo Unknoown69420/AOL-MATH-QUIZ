@@ -100,7 +100,7 @@ void saveScore(char name[], int score) {
 void displayLeaderboard() {
     struct Player players [100];
     int count = 0;
-    FILE *fp = fopen("leaderboard.txt", "r");
+    
 
     if (fp == NULL) {
         printf("No records found.\n");
