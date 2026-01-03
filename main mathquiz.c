@@ -10,8 +10,7 @@ struct Player {
 };
 
 void saveScore(char name[], int score);
-void displayLeaderboard();
-void searchPlayer(char searchName[]);
+
 
 
 int main() {
