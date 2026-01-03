@@ -13,10 +13,10 @@ void showLeaderboard();
 void findPlayer(char target[]);
 
 int main() {
-    int mainMenu, mode, answer, correctResult;
-	int num1, num2, min, max, currentScore = 0;
-	char playerName[50], yesNo;
-    int keepPlaying = 1;
+    char playerName[50];
+    int choice, difficulty, userAnswer, correctAnswer;
+    int numA, numB, rangeMin, rangeMax, totalPoints = 0;
+    int playAgain = 1;
 
 	srand(time(NULL)); 
 
