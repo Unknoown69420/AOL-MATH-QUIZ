@@ -46,7 +46,7 @@ int main() {
                 rangeMin = 1; rangeMax = 20;
             } else if (difficulty == 2) {
                 rangeMin = 21; rangeMax = 50;
-            } 
+            } else if (difficulty == 3) {
                 rangeMin = 51; rangeMax = 100;
             } else {
                 printf("Invalid mode!\n");
