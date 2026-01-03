@@ -127,25 +127,27 @@ void showLeaderboard() {
             }
         }
     }
+	
 printf("\n--- LEADERBOARD ---\n");
-    for (int i = 0; i < count; i++) {
-        printf("%d. %s - %d points\n", i + 1, players[i].name,players[i].score);
+    for (int i = 0; i < total; i++) {
+        printf("%d. %s - %d points\n", i + 1, records[i].username, records[i].points);
     }
 }
 
-void searchPlayer(char searchName[]) {
-    struct Player p;
-    FILE *fp = fopen("leaderboard.txt", "r");
-    int found = 0;
+void findPlayer(char target[]) {
+    Player temp;
+    int exists = 0;
 
-    if (fp == NULL) return;
+    FILE *file = fopen("scores.txt", "r");
+    if (file == NULL) return;
 
-    while (fscanf(fp, "%s %d", p.name, &p.score) != EOF) {
-        if (strcmp(p.name, searchName) == 0) {
-            printf("Match found: %s has a score of %d\n", p.name, p.score);
-            found = 1;
+    while (fscanf(file, "%s %d", temp.username, &temp.points) == 2) {
+        if (strcmp(temp.username, target) == 0) {
+            printf("Match found: %s has a score of %d\n", temp.username, temp.points);
+            exists = 1;
         }
     }
+	
     if (!found) printf("Player not found\n");
     fclose(fp);
 }
