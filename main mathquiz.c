@@ -18,7 +18,7 @@ int main() {
     int mainMenu, mode, answer, correctResult;
 	int num1, num2, min, max, currentScore = 0;
 	char playerName[50], yesNo;
-    
+    int keepPlaying = 1;
 
 	srand(time(NULL)); // Seed randomizer once at the start
 
