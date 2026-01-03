@@ -8,10 +8,9 @@ typedef struct {
     int points;
 } Player;
 
-void saveScore(char name[], int score);
-void displayLeaderboard();
-void searchPlayer(char searchName[]);
-
+void recordScore(char username[], int points);
+void showLeaderboard();
+void findPlayer(char target[]);
 
 int main() {
     int mainMenu, mode, answer, correctResult;
