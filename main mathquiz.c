@@ -3,10 +3,10 @@
 #include <time.h>
 #include <string.h>
 
-struct Player {
-	char name[50];
-	int score;
-};
+typedef struct {
+    char username[50];
+    int points;
+} Player;
 
 void saveScore(char name[], int score);
 void displayLeaderboard();
