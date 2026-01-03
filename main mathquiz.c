@@ -77,21 +77,21 @@ int main() {
                 }
             }
         }
-	else if (mainMenu == 2) {
-            displayLeaderboard();
+	else if (choice == 2) {
+            showLeaderboard();
         }
-        else if (mainMenu == 3) {
-            char sName[50];
+        else if (choice == 3) {
+            char search[50];
             printf("Enter name to search: ");
-            scanf("%s", sName);
-            searchPlayer(sName);
+            scanf("%s", search);
+            findPlayer(search);
         }
-        else if (mainMenu == 4) {
-            saveScore(playerName, currentScore);
+        else if (choice == 4) {
+            recordScore(playerName, totalPoints);
             printf("Score saved. Goodbye %s!\n", playerName);
-            keepPlaying = 0;
+            playAgain = 0;
         }
-    }
+    } while (playAgain);
 
     return 0;
 }
