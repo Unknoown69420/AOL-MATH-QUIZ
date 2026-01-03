@@ -140,4 +140,6 @@ void searchPlayer(char searchName[]) {
             found = 1;
         }
     }
-    
+    if (!found) printf("Player not found\n");
+    fclose(fp);
+}
