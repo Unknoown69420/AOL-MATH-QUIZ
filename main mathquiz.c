@@ -68,7 +68,7 @@ int main() {
                 scanf("%d", &userAnswer);
 
                 if (userAnswer == correctAnswer) {
-                    int earned = (difficulty == 1) ? 10 : (difficulty == 2 ? 20 : 30);
+                    
                     totalPoints += earned;
                     printf("Correct! +%d points. Current Total: %d\n", earned, totalPoints);
                     break; // keluar dari pertanyaan ulangan
