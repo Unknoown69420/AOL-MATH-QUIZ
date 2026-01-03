@@ -148,6 +148,8 @@ void findPlayer(char target[]) {
         }
     }
 	
-    if (!found) printf("Player not found\n");
-    fclose(fp);
+    if (!exists) {
+        printf("Player not found\n");
+    }
+    fclose(file);
 }
